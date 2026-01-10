@@ -1,0 +1,7 @@
+{
+  "name": "S.R. Educational Institutions - Tirupati | Defence Academy",
+  "description": "Rayalaseema's leading Junior & Degree College and Defence Academy in Tirupati with 1046+ placements. Offering Inter + Jobs and Degree + Jobs with 100% guarantee.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
