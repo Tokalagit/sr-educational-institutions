@@ -50,7 +50,7 @@ app.post("/send-email", async (req, res) => {
 console.log("Loaded USER:", process.env.EMAIL_USER);
 console.log("Loaded PASS length:", process.env.EMAIL_PASS?.length);
 
-app.listen(5000, () => {
+app.listen(5000, '0.0.0.0',() => {
   console.log("Server running on port 5000");
 });
 

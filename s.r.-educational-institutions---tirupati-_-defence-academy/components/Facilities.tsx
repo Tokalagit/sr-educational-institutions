@@ -90,12 +90,12 @@ const Facilities: React.FC = () => {
                 <div className="col-span-2 h-72 rounded-3xl overflow-hidden">
                   <img src={campus.photos[0]} alt={campus.name} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
                 </div>
-                <div className="h-40 rounded-3xl overflow-hidden">
+                {/* <div className="h-40 rounded-3xl overflow-hidden">
                   <img src={campus.photos[1]} alt="Campus detail" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
                 </div>
                 <div className="h-40 rounded-3xl overflow-hidden">
                   <img src={campus.photos[2]} alt="Campus detail" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
-                </div>
+                </div> */}
               </div>
 
               {/* Content Side */}
