@@ -148,7 +148,7 @@ const [message, setMessage] = useState("");
   try {
     const data = { name, mobile, course, message };
 
-    const response = await fetch("http://localhost:5000/send-email", {
+    const response = await fetch("http://3.88.63.198:5000/send-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
