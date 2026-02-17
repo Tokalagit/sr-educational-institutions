@@ -5,7 +5,7 @@ import { MOTTO, SCHOOL_NAME, SCHOOL_SUBTITLE } from '../constants';
 
 const Hero: React.FC = () => {
   return (
-    <section id="home" className="relative z-10 flex flex-col justify-center px-4 sm:px-6 md:px-12 lg:px-20 max-w-7xl mx-auto">
+    <section id="home" className="relative z-10 flex flex-col justify-center px-4 sm:px-6 md:px-12 lg:px-20 max-w-8xl max-h-8xl mx-auto">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
