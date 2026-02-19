@@ -179,7 +179,9 @@ const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault(); // 🚀 IMPORTANT
 
   try {
-    const response = await fetch("http://54.85.8.235:5000/send-email", {
+    // const response = await fetch("http://54.85.8.235:5000/send-email", {
+    const response = await fetch("https://sreducationalinstitutions.com/send-email", {
+
       method: "POST",
       headers: {
         "Content-Type": "application/json",
