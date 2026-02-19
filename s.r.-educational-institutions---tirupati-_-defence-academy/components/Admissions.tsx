@@ -180,7 +180,7 @@ const handleSubmit = async (e: React.FormEvent) => {
 
   try {
     // const response = await fetch("http://54.85.8.235:5000/send-email", {
-    const response = await fetch("https://sreducationalinstitutions.com/send-email", {
+    const response = await fetch("/send-email", {
 
       method: "POST",
       headers: {
