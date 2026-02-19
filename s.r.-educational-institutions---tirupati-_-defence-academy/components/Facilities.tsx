@@ -87,7 +87,7 @@ const Facilities: React.FC = () => {
             >
               {/* Image Gallery Side */}
               <div className="lg:w-1/2 p-6 grid grid-cols-2 gap-3 bg-slate-100">
-                <div className="col-span-2 h-72 rounded-3xl overflow-hidden">
+                <div className="col-span-2 h-full rounded-3xl overflow-hidden">
                   <img src={campus.photos[0]} alt={campus.name} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
                 </div>
                 {/* <div className="h-40 rounded-3xl overflow-hidden">
