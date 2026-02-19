@@ -997,9 +997,6 @@ const Header: React.FC = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-//   useEffect(() => {
-//   document.body.style.overflow = menuOpen ? "hidden" : "auto";
-// }, [menuOpen]);
 
 useEffect(() => {
   if (menuOpen) {
@@ -1043,20 +1040,7 @@ const handleMobileNavClick = (href: string) => {
 
         <div className="px-4 sm:px-6 md:px-10 lg:px-40 h-full flex items-center justify-between">
 
-          {/* LOGO */}
-          {/* <a href="/" className="flex items-center gap-4">
-            <img src={LOGO_URL} className="h-10 w-10 object-contain" />
-            <div>
-              <h1 className="text-[16px] font-black leading-tight uppercase">
-                {SCHOOL_NAME}
-              </h1>
-              <p className="text-[10px] font-bold leading-none uppercase">
-                {SCHOOL_SUBTITLE}
-              </p>
-            </div>
-          </a> */}
-
-
+      
 
             <a href="/" className="flex items-center gap-4">
             <img src={LOGO_URL} className="h-10 w-10 object-contain" />
