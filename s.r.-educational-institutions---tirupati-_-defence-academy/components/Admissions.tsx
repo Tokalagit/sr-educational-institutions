@@ -183,8 +183,8 @@ const handleSubmit = async (e: React.FormEvent) => {
 
   try {
     // const response = await fetch("http://54.85.8.235:5000/send-email", {
-    const response = await fetch("/send-email", {
-    // const response = await fetch("http://localhost:5000/send-email", {
+    // const response = await fetch("/send-email", {
+    const response = await fetch("http://localhost:5000/send-email", {
 
 
       method: "POST",
@@ -200,12 +200,15 @@ const handleSubmit = async (e: React.FormEvent) => {
     if (response.ok) {
       alert("Query Sent Successfully!");
       setFormData({
-        // name: "",
-        // mobile: "",
-        // course: ""
-        studentName:"",
-        phoneNumber:"",
-        course:""
+        name: "",
+        mobile: "",
+        course: ""
+  //        studentName: '',
+  // parentName: '',
+  // studentAcademicYear: '',
+  // parentEmail: '',
+  // phoneNumber: '',
+  // course: ''
 
       });
     } else {
