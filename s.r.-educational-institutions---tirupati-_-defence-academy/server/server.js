@@ -10,7 +10,9 @@ app.use(cors());
 app.use(express.json());
 
 app.post("/send-email", async (req, res) => {
-  const { name, mobile, course, message } = req.body;
+  // const { name,pname,stdacyr,pemail, mobile, course, message } = req.body;
+  const { studentName,parentName,studentAcademicYear,parentEmail, phoneNumber, course, message } = req.body;
+
 
   console.log("Received:", req.body);
 
@@ -31,8 +33,11 @@ app.post("/send-email", async (req, res) => {
       subject: "New Enquiry",
       html: `
         <h3>New Enquiry</h3>
-        <p><b>Name:</b> ${name}</p>
-        <p><b>Mobile:</b> ${mobile}</p>
+        <p><b>Name:</b> ${studentName}</p>
+        <p><b>Parent Name:</b> ${parentName}</p>
+        <p><b>Student Academic Year:</b> ${studentAcademicYear}</p>
+        <p><b>Parent Email:</b> ${parentEmail}</p>
+        <p><b>Mobile:</b> ${phoneNumber}</p>
         <p><b>Course:</b> ${course}</p>
         <p><b>Message:</b> ${message}</p>
       `,

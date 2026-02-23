@@ -138,14 +138,14 @@ const Footer: React.FC = () => {
               <li className="flex gap-3 text-[11px] items-start">
                 <MapPin className="text-orange-500 shrink-0 mt-0.5" size={16} />
                 <span className="leading-relaxed">
-                  Opp. Old Dilli’s Hotel, <br />
-                  National Highway, Tirupati, <br />
-                  Andhra Pradesh - 517501
+                  Upparappalli Checkpost,  <br />
+                  opposite to Delhi's hotel, Avilali, <br />
+                  Andhra Pradesh - 517508
                 </span>
               </li>
               <li className="flex gap-3 text-[11px] items-center">
                 <Phone className="text-orange-500 shrink-0" size={16} />
-                <span className="font-bold">+91 95815 40540</span>
+                <span className="font-bold">+91 96036 23494 | +91 90008 52892</span>
               </li>
               <li className="flex gap-3 text-[11px] items-center">
                 <Mail className="text-orange-500 shrink-0" size={16} />

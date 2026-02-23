@@ -214,7 +214,7 @@ const Academics: React.FC = () => {
             <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-8 bg-white/5 p-8 rounded-2xl border border-white/5">
                <div className="text-center">
                   <p className="text-orange-500 font-black text-4xl">467/470</p>
-                  <p className="text-[9px] font-bold uppercase tracking-widest text-slate-400">Placements</p>
+                  <p className="text-[9px] font-bold uppercase tracking-widest text-slate-400">marks</p>
                </div>
                <div className="h-px md:h-12 w-full md:w-px bg-white/10"></div>
                <div className="text-center">

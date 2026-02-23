@@ -126,7 +126,7 @@ const Facilities: React.FC = () => {
                     href="#contact-section" 
                     className="inline-block bg-[#0d1b2a] text-white px-8 py-4 rounded-xl font-black uppercase text-xs tracking-widest hover:bg-orange-600 transition-all shadow-lg shadow-slate-200"
                   >
-                    Visit This Campus
+                    Enquire us
                   </a>
                 </div>
               </div>

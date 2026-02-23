@@ -128,7 +128,7 @@ const Gallery: React.FC = () => {
                 <p className="text-sm font-bold tracking-widest uppercase text-orange-400 mb-1">
                   {filteredImages[selectedImageIndex].category}
                 </p>
-                <p className="text-lg opacity-90">Accord School Tirupati - Photo {selectedImageIndex + 1}</p>
+                <p className="text-lg opacity-90">sr institurion Tirupati - Photo {selectedImageIndex + 1}</p>
               </div>
             </div>
             

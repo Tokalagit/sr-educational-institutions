@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
             <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm border border-white/10 px-5 py-3 rounded-xl">
               <MapPin className="text-orange-500" size={18} />
               <div className="flex flex-col">
-                <span className="font-bold text-[10px] uppercase">3 Campuses in Tirupati</span>
+                <span className="font-bold text-[10px] uppercase">5 Campuses in Tirupati</span>
                 <span className="text-[9px] text-slate-400">Upparapalli Checkpost</span>
               </div>
             </div>
@@ -59,7 +59,7 @@ const Hero: React.FC = () => {
               <p className="text-[9px] font-bold uppercase tracking-widest text-slate-400 mt-1">Placements</p>
             </div>
             <div>
-              <p className="text-2xl md:text-3xl font-black text-white">3</p>
+              <p className="text-2xl md:text-3xl font-black text-white">5</p>
               <p className="text-[9px] font-bold uppercase tracking-widest text-slate-400 mt-1">Campuses</p>
             </div>
             <div>

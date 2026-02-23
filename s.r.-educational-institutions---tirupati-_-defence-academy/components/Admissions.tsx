@@ -167,9 +167,12 @@ import { ArrowRight, FileText, CalendarCheck, PhoneCall, CheckCircle, Smartphone
 
 const Admissions: React.FC = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    mobile: '',
-    course: ''
+  studentName: '',
+  parentName: '',
+  studentAcademicYear: '',
+  parentEmail: '',
+  phoneNumber: '',
+  course: ''
   });
 
  
@@ -181,6 +184,8 @@ const handleSubmit = async (e: React.FormEvent) => {
   try {
     // const response = await fetch("http://54.85.8.235:5000/send-email", {
     const response = await fetch("/send-email", {
+    // const response = await fetch("http://localhost:5000/send-email", {
+
 
       method: "POST",
       headers: {
@@ -280,7 +285,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                   <Smartphone size={16} className="text-orange-400" />
                   Admission Helpline:
                 </h5>
-                <p className="text-sm font-black text-orange-200">95815 40540 | 96428 32832</p>
+                <p className="text-sm font-black text-orange-200">96036 23494 | 90008 52829</p>
               </div>
               <div className="hidden sm:block">
                  <p className="text-[10px] text-orange-300 font-bold uppercase tracking-widest">Tirupati Campus</p>
@@ -300,10 +305,43 @@ const handleSubmit = async (e: React.FormEvent) => {
                 <input 
                   required 
                   type="text" 
-                  value={formData.studentName}
-                  onChange={(e) => setFormData({...formData, name: e.target.value})}
+value={formData.studentName}
+onChange={(e) => setFormData({...formData, studentName: e.target.value})}
                   className="w-full px-4 py-2.5 rounded-lg bg-slate-50 border border-slate-200 focus:border-orange-600 outline-none text-sm transition font-bold" 
                   placeholder="Student Name" 
+                />
+              </div>
+                <div className="space-y-1">
+                <label className="text-[10px] font-bold text-slate-700 uppercase tracking-widest">Parent Full Name</label>
+                <input 
+                  required 
+                  type="text" 
+value={formData.parentName}
+onChange={(e) => setFormData({...formData, parentName: e.target.value})}
+                  className="w-full px-4 py-2.5 rounded-lg bg-slate-50 border border-slate-200 focus:border-orange-600 outline-none text-sm transition font-bold" 
+                  placeholder="Parent Full Name" 
+                />
+              </div>
+                <div className="space-y-1">
+                <label className="text-[10px] font-bold text-slate-700 uppercase tracking-widest">Student Academic Year </label>
+                <input 
+                  required 
+                  type="text" 
+value={formData.studentAcademicYear}
+onChange={(e) => setFormData({...formData, studentAcademicYear: e.target.value})}
+                  className="w-full px-4 py-2.5 rounded-lg bg-slate-50 border border-slate-200 focus:border-orange-600 outline-none text-sm transition font-bold" 
+                  placeholder="Student Academic Year (ex: 10th class)" 
+                />
+              </div>
+                <div className="space-y-1">
+                <label className="text-[10px] font-bold text-slate-700 uppercase tracking-widest">Email Address</label>
+                <input 
+                  required 
+                  type="text" 
+value={formData.parentEmail}
+onChange={(e) => setFormData({...formData, parentEmail: e.target.value})}
+                  className="w-full px-4 py-2.5 rounded-lg bg-slate-50 border border-slate-200 focus:border-orange-600 outline-none text-sm transition font-bold" 
+                  placeholder="Parent Email Address" 
                 />
               </div>
               <div className="space-y-1">
@@ -311,8 +349,8 @@ const handleSubmit = async (e: React.FormEvent) => {
                 <input 
                   required 
                   type="tel" 
-                  value={formData.phoneNumber}
-                  onChange={(e) => setFormData({...formData, mobile: e.target.value})}
+value={formData.phoneNumber}
+onChange={(e) => setFormData({...formData, phoneNumber: e.target.value})}
                   className="w-full px-4 py-2.5 rounded-lg bg-slate-50 border border-slate-200 focus:border-orange-600 outline-none text-sm transition font-bold" 
                   placeholder="+91 00000 00000" 
                 />

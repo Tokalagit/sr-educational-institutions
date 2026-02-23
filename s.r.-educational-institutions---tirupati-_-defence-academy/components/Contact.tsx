@@ -138,18 +138,25 @@ import { Mail, Phone, MapPin, Clock, Send, Smartphone, Globe } from 'lucide-reac
 
 
 const Contact: React.FC = () => {
-const [name, setName] = useState("");
-const [mobile, setMobile] = useState("");
+// const [name, setName] = useState("");
+// const [mobile, setMobile] = useState("");
+// const [course, setCourse] = useState("");
+// const [message, setMessage] = useState("");
+
+const [studentName, setstudentName] = useState("");
+const [phoneNumber, setphoneNumber] = useState("");
 const [course, setCourse] = useState("");
 const [message, setMessage] = useState("");
-
-
   const handleSubmit = async () => {
   try {
-    const data = { name, mobile, course, message };
+    // const data = { studentName, phoneNumber, course, message };
+    const data = { studentName, phoneNumber, course, message };
+
 
     // const response = await fetch("http://54.85.8.235:5000/send-email", {
     const response = await fetch("/send-email", {
+    // const response = await fetch("http://localhost:5000/send-email", {
+
 
       method: "POST",
       headers: {
@@ -163,8 +170,12 @@ const [message, setMessage] = useState("");
 
     if (response.ok) {
       alert("Query Sent Successfully!");
-      setName("");
-      setMobile("");
+      // setName("");
+      // setMobile("");
+      // setCourse("");
+      // setMessage("");
+        setstudentName("");
+      setphoneNumber("");
       setCourse("");
       setMessage("");
     } else {
@@ -197,8 +208,8 @@ const [message, setMessage] = useState("");
                 </div>
                 <div>
                   <h5 className="font-black text-slate-900 text-xs mb-1">Direct Helpline</h5>
-                  <p className="text-slate-700 font-bold text-xs">95815 40540</p>
-                  <p className="text-slate-700 font-bold text-xs">96428 32832</p>
+                  <p className="text-slate-700 font-bold text-xs">96036 23494</p>
+                  <p className="text-slate-700 font-bold text-xs">90008 52829</p>
                 </div>
               </div>
               <div className="flex gap-3 p-4 bg-slate-50 rounded-2xl border border-slate-100">
@@ -208,7 +219,7 @@ const [message, setMessage] = useState("");
                 <div>
                   <h5 className="font-black text-slate-900 text-xs mb-1">Address</h5>
                   <p className="text-slate-600 font-medium text-[10px] leading-tight uppercase font-bold tracking-tight">
-                    Opp. Old Dilli’s Hotel (Nandhini), National Highway, Upparapalli Checkpost, Tirupati.
+                    Upparappalli Checkpost, opposite to Delhi's hotel, Avilali, Andhra Pradesh 517508
                   </p>
                 </div>
               </div>
@@ -245,7 +256,7 @@ const [message, setMessage] = useState("");
                 </div>
                 {/* Simulated Google Map Link */}
                 <a 
-                  href="https://www.google.com/maps/search/S.R.+Educational+Institutions+Tirupati" 
+                  href="https://www.google.com/maps/search/SR%20Defence%20Academy/@13.60516395,79.39748486,17z?hl=en" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="absolute inset-0 bg-orange-600/0 hover:bg-orange-600/10 transition-colors flex items-center justify-center"
@@ -273,8 +284,8 @@ const [message, setMessage] = useState("");
                 <input
   required
   type="text"
-  value={name}
-  onChange={(e) => setName(e.target.value)}
+  value={studentName}
+  onChange={(e) => setstudentName(e.target.value)}
   className="w-full bg-white border-slate-200 rounded-lg px-4 py-2.5 focus:border-orange-600 outline-none text-sm font-bold"
   placeholder="Your Name"
 />
@@ -285,8 +296,8 @@ const [message, setMessage] = useState("");
                   <input
   required
   type="tel"
-  value={mobile}
-  onChange={(e) => setMobile(e.target.value)}
+  value={phoneNumber}
+  onChange={(e) => setphoneNumber(e.target.value)}
   className="w-full bg-white border-slate-200 rounded-lg px-4 py-2.5 focus:border-orange-600 outline-none text-sm font-bold"
   placeholder="Your Mobile"
 />

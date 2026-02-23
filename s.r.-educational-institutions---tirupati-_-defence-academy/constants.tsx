@@ -281,11 +281,13 @@ export const NAV_LINKS = [
   },
   { label: 'Admissions', href: '#admissions' },
   { 
-    label: 'Campus Life', 
+    label: 'Our Campus', 
     href: '#facilities',
     subLinks: [
       { label: 'Main Campus', href: '#campus-main' },
-      { label: 'City Campus', href: '#campus-city' },
+      { label: 'Orion school', href: '#campus-city' },
+      { label: 'Degree College', href: '#campus-degree' },
+      { label: 'Vocational College', href: '#campus-Vocational' },
       { label: 'Defence Campus', href: '#campus-defence' }
     ]
   },
@@ -406,27 +408,44 @@ export const FACILITIES = [
   }
 ];
 
-export const GALLERY_CATEGORIES = ['All', 'Physical Training', 'Defence Practice', 'Sports Events', 'NSS Activities', 'College Fests', 'Infrastructure'];
+export const GALLERY_CATEGORIES = ['All', 'Physical Training', 'Defence Practice', 'Sports Events', 'NSS Activities', 'College Fests',  'Infrastructure', 'gym'];
 
 export const GALLERY_IMAGES = [
-  { url: 'image/phy.png', category: 'Physical Training' },
+  { url: 'image/gym 2.jpg', category: 'Physical Training' },
   { url: 'image/sports.png', category: 'Sports Events' },
   { url: 'image/Gemini_Generated_Image_9pvrx9pvrx9pvrx9.png', category: 'Infrastructure' },
   { url: 'image/fest.png', category: 'College Fests' },
   { url: 'image/phy.png', category: 'Defence Practice' },
   { url: 'image/nss.png', category: 'NSS Activities' },
   { url: 'image/sports event.jpg', category: 'Sports Events' },
+  { url: 'image/gym.jpeg', category: 'gym' },
+  { url: 'image/gym.png', category: 'gym' },
+  { url: 'image/gym 4.avif', category: 'gym' },
+  { url: 'image/gym 5.jpeg', category: 'gym' },
 ];
 
 // --- NEW SECTION: CAMPUS SPECIFIC DETAILS ---
 export const CAMPUS_DETAILS = [
   {
     id: 'main',
-    name: 'Main Campus (Tirupati)',
-    location: 'Near Alipiri, Tirupati',
+    name: 'SR JUNIOUR COLLEGES (BOYS CAMPUS)',
+    location: 'Tirupati',
+    description: 'Our primary residential campus specializing in Intermediate MPC/BiPC with rigorous Defence training.',
+
+        photos: [
+      'image/sr junior college.jpeg',
+      'image/sr junior college.jpeg',
+      'image/sr junior college.jpeg'
+    ],
+    highlights: ['Central Mess', 'Primary Drill Ground', 'Digital Library']
+  },
+    {
+    id: 'main',
+    name: 'SR JUNIOUR COLLEGES (GIRLS CAMPUS)',
+    location: 'Upparapalli Rd, near 7 Hills Super Market, Upparapalli, Check Pos, Thummala Gunta, Andhra Pradesh 517502',
     description: 'Our primary residential campus specializing in Intermediate MPC/BiPC with rigorous Defence training.',
     photos: [
-      'image/Main Campus.jpeg' // Ensure these filenames exist in your public/image folder
+      'image/girls campuse .jpeg' // Ensure these filenames exist in your public/image folder
       // 'image/main-campus-2.jpg',
       // 'image/main-campus-3.jpg'
     ],
@@ -435,7 +454,7 @@ export const CAMPUS_DETAILS = [
   {
     id: 'city',
     // name: 'City Center Campus',
-    name: 'Orion School',
+    name: 'Orion School (branch 1)',
 
     location: 'Tummalagunta,Avilali, Tirupati',
     // description: 'Focused on Degree courses (BCA, BBA, B.Sc) and professional job-oriented coaching.',
@@ -452,16 +471,65 @@ export const CAMPUS_DETAILS = [
     highlights: ['All Round Personality Grooming', 'Holistic Development', 'Quality Based Education']
 
   },
+    {
+    id: 'city',
+    // name: 'City Center Campus',
+    name: 'Orion School (branch 2)',
+
+    location: 'Tirupati',
+    // description: 'Focused on Degree courses (BCA, BBA, B.Sc) and professional job-oriented coaching.',
+    description: 'Your child our care.',
+
+    photos: [
+      'image/orion branch 2.jpeg'
+
+      // 'image/city-campus-1.jpg'
+      // 'image/city-campus-2.jpg',
+      // 'image/city-campus-3.jpg'
+    ],
+    // highlights: ['Computer Labs', 'Placement Cell', 'Seminar Hall']
+    highlights: ['All Round Personality Grooming', 'Holistic Development', 'Quality Based Education']
+
+  },
+    {
+    id: 'degree',
+    name: 'S.R. SRINIVASA DEGREE  COLLEGE',
+    location: 'Tirupati',
+    description: 'A Degree College dedicated to providing quality education, skill development, and holistic growth to prepare students for successful careers and higher studies.',
+    photos: [
+      'image/sr degree college.jpeg',
+      'image/sr degree college.jpeg',
+      'image/sr degree college.jpeg'
+    ],
+    highlights: ['Obstacle Course', 'Modern Gym', 'NSS Training Center']
+  },
+   {
+  id: 'Vocational',
+  name: 'S.R. Vocational College',
+  location: 'Tirupati',
+  description: 'S.R. Vocational College is committed to providing industry-oriented education and practical skill training. The college focuses on hands-on learning, career development, and preparing students for immediate employment and professional growth.',
+  photos: [
+    'image/vocational college.jpeg',
+    'image/vocational college.jpeg',
+    'image/vocational college.jpeg'
+  ],
+  highlights: [
+    'Industry-Oriented Skill Training',
+    'Practical Lab Facilities',
+    'Placement Assistance & Career Guidance'
+  ]
+},
+
   {
     id: 'defence',
     name: 'S.R. Defence Academy Campus',
     location: 'Karakambadi Road, Tirupati',
     description: 'A specialized training facility for physical endurance and national-level defence exam preparation.',
     photos: [
-      'image/Defence.jpeg',
-      'image/defence-campus-2.jpg',
-      'image/defence-campus-3.jpg'
+      'image/sr defence .jpeg',
+      'image/sr defence .jpeg',
+      'image/sr defence .jpeg'
     ],
-    highlights: ['Obstacle Course', 'Modern Gym', 'NSS Training Center']
+   highlights: ['Obstacle Course', 'Modern Gym', 'NSS Training Center']
   }
 ];

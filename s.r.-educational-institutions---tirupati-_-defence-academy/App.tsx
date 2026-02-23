@@ -158,7 +158,7 @@ const App: React.FC = () => {
                 <a href="#admissions" className="bg-white text-orange-700 px-8 py-4 rounded-xl font-black text-[11px] uppercase tracking-widest hover:bg-slate-50 transition shadow transform hover:-translate-y-1">
                   Download Guide
                 </a>
-                <a href="tel:+919581540540" className="bg-slate-900 text-white px-8 py-4 rounded-xl font-black text-[11px] uppercase tracking-widest flex items-center gap-2 hover:bg-black transition shadow transform hover:-translate-y-1">
+                <a href="tel:+9196036 23494" className="bg-slate-900 text-white px-8 py-4 rounded-xl font-black text-[11px] uppercase tracking-widest flex items-center gap-2 hover:bg-black transition shadow transform hover:-translate-y-1">
                   <Phone size={14} /> Visit Us
                 </a>
               </div>
