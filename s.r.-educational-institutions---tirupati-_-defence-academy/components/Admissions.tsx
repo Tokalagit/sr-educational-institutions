@@ -200,9 +200,13 @@ const handleSubmit = async (e: React.FormEvent) => {
     if (response.ok) {
       alert("Query Sent Successfully!");
       setFormData({
-        name: "",
-        mobile: "",
-        course: ""
+        // name: "",
+        // mobile: "",
+        // course: ""
+        studentName:"",
+        phoneNumber:"",
+        course:""
+
       });
     } else {
       alert("Failed to send Query");
